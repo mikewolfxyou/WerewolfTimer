@@ -1,0 +1,54 @@
+$big-screen: 820px;
+$big-screen-font-size: 50em;
+$small-screen-font-size: 11em;
+$mdc-typography-font-family: "Iceland";
+$debug-font-size: .015em;
+
+.TimerContainer {
+  text-align: center;
+  @media only screen and (min-width: $big-screen) {
+    font-size: $big-screen-font-size;
+  }
+  font-family: $mdc-typography-font-family;
+  font-size: $small-screen-font-size;
+}
+
+/* iceland-regular - latin */
+@font-face {
+  font-family: 'Iceland';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Iceland'), local('Iceland-Regular'),
+  url('../fonts/iceland-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/iceland-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.TimerColorNormal {
+  color:#898989;
+}
+
+.TimerColorWarning {
+  color: brown;
+}
+
+.TimerColorAlmostDone {
+  color: #f50057;
+}
+
+.TimerColorHidden {
+  color: white;
+}
+
+.TimeHidden {
+  display: none;
+}
+
+.TimeShow {
+  display: block;
+}
+
+.DebugFont {
+  font-size: $debug-font-size;
+}
+
+

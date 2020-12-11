@@ -1,0 +1,14 @@
+./idea
+.idea
+.sass-cache
+
+# dependencies
+/node_modules
+/src/styles/css
+
+# production
+/build
+/docker-images
+
+# misc
+.DS_Store
